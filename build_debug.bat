@@ -35,3 +35,4 @@ echo Start building files
 CALL ninja -C %SOLUTION_RELATIVE_DIR% examples
 echo Finished building files
 POPD
+PAUSE

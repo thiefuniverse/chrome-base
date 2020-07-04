@@ -238,7 +238,9 @@ def _SortByHighestVersionNumberFirst(list_of_str_versions):
   def to_number_sequence(x):
     part_sequence = re.split(r'[\\/\.]', x)
     return [to_int_if_int(x) for x in part_sequence]
-
+  for it in [ 'x86', 'arm', 'arm64', 'x64']:
+    if it in list_of_str_versions:
+      list_of_str_versions.remove(it)
   list_of_str_versions.sort(key=to_number_sequence, reverse=True)
 
 def _CopyUCRTRuntime(target_dir, source_dir, target_cpu, dll_pattern, suffix):
