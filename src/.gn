@@ -120,6 +120,6 @@ exec_script_whitelist =
       # with other repos. The entries in this list should be only for files
       # in the Chromium repo outside of //build.
       "//build_overrides/build.gni",
-
+      "//build/timestamp.gni",
       "//tools/grit/grit_rule.gni",
     ]
