@@ -54,7 +54,7 @@ int main() {
   // future fontconfig_caches changes.
   CHECK(base::DeleteFileRecursively(fontconfig_caches));
 
-  base::SetUpFontconfig();
+  //base::SetUpFontconfig();
   FcInit();
   FcFini();
 

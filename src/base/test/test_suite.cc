@@ -557,7 +557,7 @@ void TestSuite::Initialize() {
 #endif
 
 #if defined(OS_LINUX)
-  SetUpFontconfig();
+  //SetUpFontconfig();
 #endif
 
   // Add TestEventListeners to enforce certain properties across tests.
