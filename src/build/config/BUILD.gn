@@ -296,7 +296,7 @@ group("executable_deps") {
     ":common_deps",
   ]
   if (export_libcxxabi_from_executables) {
-    public_deps += [ "//buildtools/third_party/libc++abi" ]
+    #public_deps += [ "//buildtools/third_party/libc++abi" ]
   }
 }
 

@@ -11,18 +11,18 @@ config("find_bad_constructs") {
     # The plugin is built directly into clang, so there's no need to load it
     # dynamically.
     cflags += [
-      "-Xclang",
-      "-add-plugin",
-      "-Xclang",
-      "find-bad-constructs",
+      #"-Xclang",
+      #"-add-plugin",
+      #"-Xclang",
+      #"find-bad-constructs",
     ]
 
     if (is_linux || is_android || is_fuchsia) {
       cflags += [
-        "-Xclang",
-        "-plugin-arg-find-bad-constructs",
-        "-Xclang",
-        "check-ipc",
+        #"-Xclang",
+        #"-plugin-arg-find-bad-constructs",
+        #"-Xclang",
+        #"check-ipc",
       ]
     }
   }

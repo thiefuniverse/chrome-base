@@ -379,6 +379,7 @@ config("compiler") {
   if (is_linux || is_android || is_fuchsia) {
     asmflags += [ "-fPIC" ]
     cflags += [ "-fPIC" ]
+    cflags += [ "-Werror,-Wdeprecated-copy" ]
     ldflags += [ "-fPIC" ]
 
     if (!is_clang) {
