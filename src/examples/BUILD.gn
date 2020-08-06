@@ -12,6 +12,7 @@ group("examples") {
     ":strings_example",
     ":process_cpu_example",
     ":thread_model_example",
+    ":callback_example",
   ]
 }
 
@@ -46,6 +47,19 @@ executable("thread_model_example") {
 
   sources = [
     "thread/thread_model_example.cc",
+  ]
+
+  deps = [
+    "//base:base",
+    "//base/test:test_support",
+  ]
+}
+
+executable("callback_example") {
+  testonly = true
+
+  sources = [
+    "callback/callback_example.cc",
   ]
 
   deps = [
